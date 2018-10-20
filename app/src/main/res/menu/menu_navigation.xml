@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:orderInCategory="1"
+        android:title="@string/searchTitle"
+        />
+
+
+
+    <item
+        android:id="@+id/actionNotificationItem"
+        android:icon="@drawable/ic_message_text"
+        android:orderInCategory="2"
+        android:title="@string/menu_item_notification"
+    />
+
+
+
+</menu>
