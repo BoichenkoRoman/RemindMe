@@ -6,4 +6,15 @@
     <color name="mainBackgraund">#e2e2e2</color>
     <color name="colorWhite">#fff</color>
 
+
+<!--jkljkl-->
+    <color name="colorPrimary2">#15e160</color>
+    <color name="colorPrimaryDark2">#86f4b4</color>
+    <color name="colorAccent2">#dfd34d</color>
+    <color name="mainBackgraund2">#de95e2</color>
+    <color name="colorWhite2">#de95e2</color>
+
+
+
+
 </resources>

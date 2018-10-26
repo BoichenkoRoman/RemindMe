@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 app:tabIndicatorColor="@android:color/white"
                 app:tabIndicatorHeight="6dp"
-                app:tabSelectedTextColor="@android:color/white"
+                app:tabSelectedTextColor="@color/colorPrimary"
                 app:tabTextColor="@android:color/white" />
 
 
@@ -40,7 +40,11 @@
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        <!--Этот атрибут указывает на класс, в котором описано как должен вести себя этот элемент,
+         если он является прямым потомком CoordinatorLayout.
+         В данном случае, значение appbar_scrolling_view_behavior говорит о том, что этот   элемент будет реагировать на события,
+          генерируемые AppBarLayout.-->
 
 
     </android.support.design.widget.CoordinatorLayout>
@@ -51,8 +55,11 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+
         app:headerLayout="@layout/navigation_header"
-        app:menu="@menu/menu_navigation" />  <!--  добавление  хедера в -->
+        app:menu="@menu/menu_navigation" />
+    <!--  добавление  header  в  NavigationView   слой    navigation_header-->
+    <!--  добавление  хедера в -->
 
 
 </android.support.v4.widget.DrawerLayout>

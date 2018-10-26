@@ -11,13 +11,19 @@
         />
 
 
-
     <item
         android:id="@+id/actionNotificationItem"
         android:icon="@drawable/ic_message_text"
         android:orderInCategory="2"
         android:title="@string/menu_item_notification"
     />
+
+    <item
+        android:id="@+id/actionNotificationItem2"
+        android:icon="@drawable/ic_message_text"
+        android:orderInCategory="3"
+        android:title="текст"
+        />
 
 
 

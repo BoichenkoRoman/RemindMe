@@ -11,7 +11,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.view.View;
+
 
 import roman.boichenko.remindme.adapter.TabsPagerFragmentAdapter;
 
@@ -19,12 +19,12 @@ public class MainActivity extends AppCompatActivity {
     private static final int LAYOUT = R.layout.activity_main;
     private Toolbar toolbar;
     private DrawerLayout drawerLayout;
-    private TabLayout tabLayout;
+
     private ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setTheme(R.style.AppDefault); //  указали какая тема по умолчанию
+        setTheme(R.style.AppDefault2); //  указали какая тема по умолчанию
 
         super.onCreate(savedInstanceState);
         setContentView(LAYOUT);
@@ -57,16 +57,16 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 
 
-        ActionBarDrawerToggle  toggle =  new ActionBarDrawerToggle (this, drawerLayout, toolbar ,R.string.view_navigation_open, R.string.view_navigation_close);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.view_navigation_open, R.string.view_navigation_close);
         drawerLayout.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView =   (NavigationView) findViewById(R.id.navigation);
+        NavigationView navigationView = (NavigationView) findViewById(R.id.navigation);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 drawerLayout.closeDrawers();
-
+                //  переход по меню из  NavigationView
                 switch (menuItem.getItemId()) {
                     case R.id.actionNotificationItem:
                         showNotificationTab();
@@ -82,8 +82,9 @@ public class MainActivity extends AppCompatActivity {
 
         TabsPagerFragmentAdapter adapter = new TabsPagerFragmentAdapter(getSupportFragmentManager());
         viewPager.setAdapter(adapter);
+
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
-        tabLayout.setupWithViewPager(viewPager);
+        tabLayout.setupWithViewPager(viewPager); // связываем  tabLayout   с  viewPager
     }
 
 

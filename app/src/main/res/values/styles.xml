@@ -24,4 +24,17 @@
     <!--</style>-->
 
 
+    <style name="AppDefault2" parent="AppTheme">-
+        Customize your theme here.
+        <item name="colorPrimary">@color/colorPrimary2</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark2</item>
+        <item name="colorAccent">@color/colorAccent2</item>
+        <item name="colorControlNormal">@color/colorWhite2</item>
+
+
+        <!--  <item name="windowActionBar">false</item>   дефоултный акшен бар не показываеться -->
+    </style>
+
+
+
 </resources>

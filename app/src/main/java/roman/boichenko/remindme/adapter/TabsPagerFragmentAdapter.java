@@ -12,7 +12,7 @@ public class TabsPagerFragmentAdapter extends FragmentPagerAdapter {
 
     public TabsPagerFragmentAdapter(FragmentManager fm) {
         super(fm);
-        tabs = new String[]{"Tab1", "напоминание", "tab 3", "tab 4"};
+        tabs = new String[]{"Tab 1", "Напоминание", "tab 3", "tab 4"};
 
 
     }
